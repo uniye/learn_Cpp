@@ -33,7 +33,7 @@ Stock::Stock() { //생성자
 
 }
 
-Stock::~Stock() { //파괴자
+Stock::~Stock() { //파괴자: 클래스 소멸: 자동 호출됨
 
 
 }
