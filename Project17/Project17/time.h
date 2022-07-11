@@ -6,7 +6,6 @@ private:
 	int hours;
 	int mins;
 
-
 public:
 	Time();
 	Time(int,int);
@@ -14,8 +13,12 @@ public:
 	void addMins(int);
 	//Time sum(Time&);
 	Time operator+(Time&);
+	Time operator*(int);
 	void show();
 	~Time();
+	friend Time operator*(int n, Time& t) {
+		return t * n;
+	}
 
 };
 

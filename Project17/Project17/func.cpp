@@ -32,3 +32,19 @@ void Time::show() {
 
 Time::~Time(){
 }
+
+//Time operator*(int n, Time& t) { //friend 멤버 함수가 아니기에 Time::을 안 붙여줌
+//	Time result;
+//	long resultMin = t.hours * n * 60 + t.mins * n;
+//	result.hours = resultMin / 60;
+//	result.mins = resultMin % 60;
+//	return result;
+//}
+
+Time Time::operator*(int n) {
+	Time result;
+	long resultMin = t.hours * n * 60 + t.mins * n;
+	result.hours = resultMin / 60;
+	result.mins = resultMin % 60;
+	return result;
+}
