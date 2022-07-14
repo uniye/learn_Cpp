@@ -11,6 +11,9 @@ Animal::Animal(string sp, bool yn) {
 	species = sp;
 	leg = yn;
 }
+Animal::~Animal() {
+
+}
 void Animal::run(double speed) {
 	cout << species << "가 " << speed << "의 속도로 뛴다." << endl;
 }
@@ -32,7 +35,7 @@ Dog::Dog(string sp, bool yn, string n): Animal(sp, yn){
 }
 
 void Dog::show() {
-	cout << name << "은 "<< getsp()<<"종이고, ";
+	cout << name << "은/는 "<< getsp()<<"종이고, ";
 	if (getleg() == true)
 		cout << "다리가 있다." << endl;
 	else

@@ -8,6 +8,7 @@ private:
 	bool leg;
 public:
 	Animal();
+	virtual ~Animal();
 	Animal(string, bool);
 	void run(double);
 	void walk(double);
