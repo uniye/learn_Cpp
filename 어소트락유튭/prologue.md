@@ -1,9 +1,9 @@
-- ![참고 영상](https://www.youtube.com/watch?v=PFc4g8mxOiI&list=PL4SIC1d_ab-aOxWPucn31NHkQvNPHK1D1)
+- [참고 영상](https://www.youtube.com/watch?v=PFc4g8mxOiI&list=PL4SIC1d_ab-aOxWPucn31NHkQvNPHK1D1)
 # 요약
 - 초반에 쉽다고 방심하지 않기.
 - 공부 습관을 들여놔야함.
 - 컴퓨터는 전기적 기계이기에 켜짐 꺼짐만 알기 때문에 2진법을 사용.
 ## 왜 c++을 사용하는가?
 - 속도 빠름 : 기계어랑 가장 가까운 언어 (바로 os로 실행 => (원래는 중간에 있는 애들이 메모리 관리해주는데 그런거 없음) 메모리 관리를 직접해야함)
-- 직접 메모리를 관리할 수 있음.(실력 중심 => 최적화 가능)
+- 직접 메모리를 관리할 수 있음.(실력 중심 => *최적화 가능*)
 - 
