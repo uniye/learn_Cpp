@@ -15,30 +15,30 @@ int main() {
 	Time day1 = { 5,45 };
 	Time day2 = { 4,55 };
 	Time total = sum(&day1, &day2);
-	cout << "ÀÌÆ²°£ ¼Ò¿ä ½Ã°£: ";
+	cout << "ì´í‹€ê°„ ì†Œìš” ì‹œê°„: ";
 	showTime(total);
 
 
-	//Àç±ÍÇÔ¼ö
+	//ìž¬ê·€í•¨ìˆ˜
 	countDown(5);
 
-	//ÇÔ¼ö¸¦ Áö½ÃÇÏ´Â Æ÷ÀÎÅÍ: ¾î¶°ÇÑ ÇÔ¼ö¿¡ ÇÔ¼öÀÇ ÁÖ¼Ò¸¦ ¸Å°³º¯¼ö·Î ³Ñ°ÜÁÖ´Â °æ¿ì À¯¿ëÇÔ
+	//í•¨ìˆ˜ë¥¼ ì§€ì‹œí•˜ëŠ” í¬ì¸í„°: ì–´ë– í•œ í•¨ìˆ˜ì— í•¨ìˆ˜ì˜ ì£¼ì†Œë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ ë„˜ê²¨ì£¼ëŠ” ê²½ìš° ìœ ìš©í•¨
 	int (*pf)(int);
 	pf = func;
 	cout << (*pf)(3) << endl;
 	return 0;
 }
 void countDown(int n) {
-	cout << "Ä«¿îÆÃ" << n << endl;
+	cout << "ì¹´ìš´íŒ…" << n << endl;
 	if (n > 0)
 		countDown(n - 1);
-	cout << n << "¹øÂ° Àç±ÍÇÔ¼ö" << endl;
+	cout << n << "ë²ˆì§¸ ìž¬ê·€í•¨ìˆ˜" << endl;
 }
 int func(int n) {
 	return n + 1;
 }
 
-Time sum(Time* t1, Time* t2) { //Æ÷ÀÎÅÍ·Î ÇØ¾ß ½Ã°£ Àý¾à °¡´É
+Time sum(Time* t1, Time* t2) { //í¬ì¸í„°ë¡œ í•´ì•¼ ì‹œê°„ ì ˆì•½ ê°€ëŠ¥
 	Time total;
 	total.mins = (t1->mins + t2->mins) % minsPerHr;
 	total.hour = t1->hour + t2->hour + (t1->mins + t2->mins) / minsPerHr;
@@ -46,5 +46,5 @@ Time sum(Time* t1, Time* t2) { //Æ÷ÀÎÅÍ·Î ÇØ¾ß ½Ã°£ Àý¾à °¡´É
 }
 
 void showTime(Time t1) {
-	cout << t1.hour << "½Ã°£, " << t1.mins <<"ºÐ" << endl;
+	cout << t1.hour << "ì‹œê°„, " << t1.mins <<"ë¶„" << endl;
 }
